@@ -17,7 +17,7 @@ export const viewport: Viewport = {
 //   viewportFit: 'cover'  
 }
 
-
+ 
 export default function SlidesLayout(props: SlidesLayoutProps) {
     return (
         <div className="">
