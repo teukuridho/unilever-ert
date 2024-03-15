@@ -15,7 +15,7 @@ export const viewport: Viewport = {
 //   height: 1080,
   initialScale: 1,
 //   viewportFit: 'cover'  
-}
+} 
 
 export default function SlidesLayout(props: SlidesLayoutProps) {
     return (
