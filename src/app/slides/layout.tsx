@@ -29,7 +29,9 @@ export default function SlidesLayout(props: SlidesLayoutProps) {
                     </div>
                     <img src={P3KLogo.src} className="max-h-full p-4"/>
                 </div>
-                {props.children}
+                <div className="h-[80%]">
+                    {props.children}
+                </div>
             </div>
             <div className="h-[15vh] bg-green-600 text-white flex items-center justify-center p-5">
                 <SlidesFooter/>
