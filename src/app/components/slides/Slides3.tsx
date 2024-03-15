@@ -1,19 +1,34 @@
+import { ReactNode } from "react"
 import "../../globals.css"
 
-function Content(){
+import {Content_f, Component_t} from "./box"
+
+function Container_f({children}: Component_t){
     return(
-        <div className="bg-white h-1/3 font-sans mb-3 flex flex-row">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat 
-            consequuntur est sed. Sit vel atque moll
+        <div className="h-full mb-2 grid gap-3 grid-cols-2 grid-rows-2 justify-between">
+            {children}
         </div>
     )
 }
 
 export default function Slide3() {
     return (
-        <div className="bg-blue-900 h-screen">
-            <Content></Content>
-            <Content></Content>
+        <div className="h-full bg-red-600 p-[0.2%]">
+            <Container_f>
+                <Content_f>
+                    hello 1
+                </Content_f>
+
+                <Content_f>
+                    hello 2
+
+                </Content_f>
+
+                <Content_f>heloo</Content_f>
+                
+                <Content_f>heloo</Content_f>
+            </Container_f>
+            
         </div>
     )
 }
