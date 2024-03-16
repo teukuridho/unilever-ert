@@ -1,21 +1,24 @@
 import { ReactNode } from "react"
 import "../../globals.css"
 
-export type Component_t = {
+export type Component = {
     children?: ReactNode;
 }
 
-export function Box({children}: Component_t){
+export function BoxHead({children}: Component){
     return(
-        <p>
-            hello
-        </p>
+        <div className="h-[22.5%] bg-red-600 text-white text-center text-2xl 
+                        font-extrabold flex items-center justify-center">
+            {children}
+        </div>
     )
 }
 
-export function Content_f({children}: Component_t){
+
+
+export function Content({children}: Component){
     return(
-        <div className="bg-slate-50 w-full">
+        <div className={"w-full bg-white"}>
             {children}
         </div>
     )
