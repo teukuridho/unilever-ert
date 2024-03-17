@@ -7,8 +7,8 @@ export type Component = {
 
 export function BoxHead({children}: Component){
     return(
-        <div className="h-[22.5%] bg-red-600 text-white text-center text-2xl 
-                        font-extrabold flex items-center justify-center">
+        <div className="h-[25%] bg-red-600 text-white text-center text-5xl
+                        font-semibold grid justify-center content-center">
             {children}
         </div>
     )
