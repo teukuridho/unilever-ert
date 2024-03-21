@@ -15,6 +15,9 @@ const config: Config = {
       },
       fontSize: {
         clamp: "clamp(1rem, 5vw, 2rem)"
+      },
+      screens: {
+        'UHD': '3840px'
       }
     },
   },

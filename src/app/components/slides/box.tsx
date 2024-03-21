@@ -7,8 +7,9 @@ export type Component = {
 
 export function BoxHead({children}: Component){
     return(
-        <div className="h-[25%] bg-red-600 text-white text-center text-5xl
-                        font-semibold grid justify-center content-center">
+        <div className="h-[23%] bg-red-600 text-white text-center text-5xl
+                        font-semibold grid justify-center content-center
+                        UHD:text-8xl UHD:font-bold">
             {children}
         </div>
     )
@@ -18,7 +19,7 @@ export function BoxHead({children}: Component){
 
 export function Content({children}: Component){
     return(
-        <div className={"w-full bg-white"}>
+        <div className="w-full bg-white flex flex-col">
             {children}
         </div>
     )
